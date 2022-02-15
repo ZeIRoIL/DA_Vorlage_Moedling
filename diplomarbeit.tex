@@ -1,0 +1,185 @@
+  %% diplomarbeit.tex
+  %% Copyright 2015 Simon M. Laube
+  %
+  % This work may be distributed and/or modified under the
+  % conditions of the LaTeX Project Public License, either version 1.3
+  % of this license or (at your option) any later version.
+  % The latest version of this license is in
+  %   http://www.latex-project.org/lppl.txt
+  % and version 1.3 or later is part of all distributions of LaTeX
+  % version 2005/12/01 or later.
+  %
+  % This work has the LPPL maintenance status `author maintained'.
+  % 
+  % The Current Maintainer of this work is S. M. Laube
+  %
+  % This work consists of the files listed in ./Help/files.txt
+
+%%=====================================================%%
+%% Neues Diplomarbeitstemplate der ET	   			   %%
+%% Abteilung ab 2013/2014				   			   %%
+%% Erstellt von Simon Michael Laube		   			   %%
+%% Betreut von  Prof. Mag. Dipl.-Ing. Dr. Daniel Asch  %%
+%%			    Prof. Dipl.-Ing. Dr. Wilhelm Haager	   %%
+%%=====================================================%%
+%% Dokumentklasse KOMA-Script Report
+\documentclass[paper=a4,12pt]{scrreprt}
+% Encoding UTF8
+\usepackage[utf8]{inputenc}
+% 8 Bit Aufloesung der Buchstaben
+\usepackage[T1]{fontenc}
+% Seitenraender
+\usepackage[scale=0.72]{geometry}
+% Spracheinstellungen
+\usepackage[english, naustrian]{babel} % your native language must be the last one!!
+% erweiterte Farbenpalette
+\usepackage[dvipsnames]{xcolor}
+% Abbildungen
+\usepackage{graphicx}
+% Tabellen (erweitert)
+\usepackage{tabularx}
+% TikZ + Circuit-TikZ (fuer Schaltungen)									
+\usepackage[europeanresistors,							
+			europeaninductors]{circuitikz}
+% Nuetzliche TikZ Libraries
+\usetikzlibrary{arrows,automata,positioning}
+% Mathematikpakete!
+\usepackage{amsmath,amssymb}							
+%\usepackage{mathtools}	
+% PDF Einbindung (zB Datenblaetter)
+\usepackage{pdfpages}
+% Source Code Einbindung, Setup siehe:
+% http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings									
+\usepackage{listings,scrhack} %scrhack vermeidet Umschaltung auf KOMA Floats..			
+% Ausrichtung der Bilder
+\usepackage[export]{adjustbox}
+
+% The Euro­pean cur­rency sym­bol for the Euro			
+\usepackage{eurosym}
+
+% Landscape
+\usepackage{lscape}
+\usepackage{tabularx}
+% Diplomarbeitsspezifisches Package etdipa
+\usepackage{etdipa}
+
+%% Abkuerzungsverzeichnis
+\usepackage[]{acronym}
+\usepackage{xcolor}
+%% Todos
+\usepackage[]{todonotes}
+
+%% Ganttdiagramme
+\usepackage{pgfgantt}
+\usepackage{xcolor}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{capt-of}
+%% Subfigures
+\usepackage[lofdepth]{subfig}
+
+
+%%==== Definitionen fuer die Diplomarbeit ============%%
+\dokumenttyp{DIPLOMARBEIT}
+\title{Musterdokument}
+\author{Hans Huber \and Birgit Bauer}
+\date{\today}
+\place{Mödling}
+\schuljahr{2018/19}
+\professor{Prof. Rick}
+\dipacolor{ETred}
+%%====================================================%%
+
+
+% Hyperlinks im Dokument
+\usepackage[colorlinks=true,
+			linkcolor=black,
+			citecolor=black,
+			bookmarks=true,
+			urlcolor=black,
+			bookmarksopen=true]{hyperref}
+\begin{document}
+
+\frontmatter
+
+%%================ Titelseite ==========================%%
+\maketitle
+% Verantwortliche/Verfasser
+%%======================================================%%
+
+%%================ Eidesstattliche Erklaerung ==========%%
+
+\begin{Eid}%Unterschrift der Diplomanden hinzufuegen!
+\unterschrift{Hans Huber}
+\unterschrift{Birgit Bauer}
+
+\end{Eid}\newpage
+%%======================================================%%
+
+%%================ Diplomandenvorstellung ==============%%
+\input{Textparts/diplomanden.tex}
+%%======================================================%%
+
+%%================ Tabelle ==============%%
+\input{Textparts/tabellen.tex}
+%%======================================================%%
+
+%%================ Danksagungen ========================%%
+\newpage
+\input{Textparts/danksagungen.tex}
+%%======================================================%%
+
+%%================ Abstract /Zusammenfass. =============%%
+\input{Textparts/abstract.tex}
+\input{Textparts/zusammenfassung.tex}
+%\selectlanguage{english} % necessary for English speaking users
+% delete this line if your native language is German 
+%%======================================================%%
+
+%%================ Inhaltsverzeichnis ==================%%
+\tableofcontents
+%%======================================================%%
+
+% Verantwortliche/Verfasser
+\responsible{Birgit Bauer}
+
+%Ab hier Hauptteil
+\mainmatter
+
+
+%%======================================================%%
+\input{Textparts/Kapitel3.tex}
+\input{Textparts/Kapitel4.tex}
+\input{Textparts/Kapitel6.tex}
+\input{Textparts/Kapitel7.tex}
+\input{Textparts/Kapitel8.tex}
+\input{Textparts/Kapitel9.tex}
+\input{Textparts/Kapitel10.tex}
+\input{Textparts/Kapitel11.tex}
+\input{Textparts/Kapitel14.tex}
+%\input{Textparts/Kapitel15.tex}
+
+\appendix
+
+%%================ Abkuerzungsverzeichnis ==============%%
+\input{Textparts/abkuerzungen.tex}
+%%======================================================%%
+
+
+%%================ Abbildungsverzeichnis ===============%%
+\setcounter{lofdepth}{2}
+\dipalistoffigures
+%%======================================================%%
+
+%%================ Tabellenverzeichnis  ================%%
+\setcounter{lotdepth}{2}
+\dipalistoftables
+%%======================================================%%
+
+%%================ Literaturverzeichnis ================%%
+\newpage
+\input{Textparts/literatur.tex}
+ 
+	 
+%%======================================================%%
+\end{document}
