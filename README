@@ -1,0 +1,98 @@
+  %% README.txt
+  %% Copyright 2015 Simon M. Laube
+  %
+  % This work may be distributed and/or modified under the
+  % conditions of the LaTeX Project Public License, either version 1.3
+  % of this license or (at your option) any later version.
+  % The latest version of this license is in
+  %   http://www.latex-project.org/lppl.txt
+  % and version 1.3 or later is part of all distributions of LaTeX
+  % version 2005/12/01 or later.
+  %
+  % This work has the LPPL maintenance status `author maintained'.
+  % 
+  % The Current Maintainer of this work is S. M. Laube
+  %
+  % This work consists of the files listed in ./Help/files.txt
+
+%% The current version number of this template is v2.6
+
+%% ENGLISH
+
+This directory and all its files provide a simple, lightweigt template
+for (small) scientific documentations. Just copy the whole
+directory to your working directory, then rename the diplomarbeit.tex
+file and directly start writing in that file.
+
+For further information, please read the guide in /Help/etdipa_doc_EN.pdf
+
+
+%% GERMAN
+
+Dieser Ordner und sein gesamter Inhalt bieten ein simples,
+einfach zu bedienendes LaTeX Template für Diplomarbeiten,
+Projektarbeiten, Vorwissenschaftliche Arbeiten oder ähnlichen
+Dokumentationen. 
+Zum Arbeiten mit dem Template muss der ganze Ordner kopiert
+werden. Dieser dient dann direkt als Arbeitsordner für die
+Dokumentation. Die Datei diplomarbeit.tex muss nur
+noch auf den jeweiligen Titel umbenannt werden. Es kann 
+und soll direkt in dieser Datei geschrieben werden.
+
+Für weitere Informationen lesen Sie bitte die Anleitung
+in /Help/etdipa_doc_DE.pdf
+
+
+%%---------------------------------------------%%
+%% CHANGELOG
+%%---------------------------------------------%%
+
+
+v2.6 February 2015
+ * translation of the manual into English.
+ * internal name variables are now automatically set 
+   to the according English translation when the babel
+   option 'english' is used.
+ * added a changelog to the README.
+
+v2.5 February 2015
+ * reworked version for CTAN, it's now possible to change
+   colors and the titlepage texts. First official upload 
+   to the CTAN
+   www.ctan.org/pkg/etdipa
+
+v2.4 November 2014 
+ * update of the short CV macro support for employment 
+   history entries
+
+v2.3 October 2014
+ * several bugfixes for the presentation in front of a 
+   group of teachers at an official TeX course at the 
+   HTL St.Pölten, department for electrical engineering
+
+v2.0--v2.2 September 2014 
+ * improvements of the several environments before the 
+   official departmentwide introduction of the template
+
+v1.8--v1.9 July 2014
+ * new short CV macro, better layout
+
+v1.7 June 2014
+ * changes in the manual and package according to the beta test
+
+v1.6 April--May 2014
+ * first unofficial launch, a group of students tested the 
+   template for the documentation of their final year project
+   (beta test)
+
+v1.1--v1.5 March 2014
+ * first document setup possibilities
+ * header and footer setup
+ * predefined text parts 
+ * titlepage
+
+v1.0 March 2014
+ * start of the project
+ * short CV macro for fancy CVs inside a document
+
+
