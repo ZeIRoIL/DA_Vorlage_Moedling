@@ -7,7 +7,7 @@ created by 6AAIFT/Umgeher Alexander
 1. Du benötigst LaTex-Studio -> https://www.texstudio.org/
 2. Github Account muss existieren und angemeldet sein
 
-## Vorgehensweise
+## Schritt für Schritt
 
 1. Das komplette Repository herunterladen.
 2. Die Datei "diplomarbeit.txt" mit dem LaTex-Studio öffnen
