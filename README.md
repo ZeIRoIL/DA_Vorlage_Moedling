@@ -4,7 +4,7 @@ created by 6AAIFT/Umgeher Alexander
 
 ## Wichtige Details für die Verwendung für die Vorlage
 
-1. Du benötigst LaTex-Studio -> Link muss hier angeben werden
+1. Du benötigst LaTex-Studio -> https://www.texstudio.org/
 2. Github Account muss existieren und angemeldet sein
 
 ## Vorgehensweise
